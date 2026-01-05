@@ -36,3 +36,7 @@ yaklaşım şeklim üzerine yazıyorum.
 
 ### Yazılar
 Aşağıda en güncel yazıları bulabilirsin.
+
+{% for post in site.posts limit:5 %}
+- [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%d %B %Y" }}
+{% endfor %}
