@@ -1,0 +1,43 @@
+# Site ayarları
+title: Tolga Bayrak
+tagline: Full-Stack Yazılım Geliştirici
+description: >
+  Full-stack yazılım geliştirme, web uygulamaları, ürün odaklı
+  sistemler ve sürdürülebilir yazılım mimarileri üzerine
+  teknik yazılar ve deneyimler.
+
+url: "https://tolgabayrak.github.io"
+baseurl: ""
+
+# Dil ve yerelleştirme
+lang: tr
+timezone: Europe/Istanbul
+
+# Tema
+theme: minima
+show_excerpts: true
+
+minima:
+  skin: dark
+  date_format: "%d %B %Y"
+  social_links:
+    github: tolgabayrak
+    linkedin: tolgabayrak
+
+# SEO (GitHub Pages destekli)
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Site sahibi (SEO için önemli)
+author:
+  name: Tolga Bayrak
+
+# Varsayılan SEO ayarları
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/og-image.png
+      author: Tolga Bayrak
