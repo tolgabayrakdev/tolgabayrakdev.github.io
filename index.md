@@ -34,9 +34,7 @@ yaklaşım şeklim üzerine yazıyorum.
 
 ---
 
-### Yazılar
-Aşağıda en güncel yazıları bulabilirsin.
-
+### Son Yazılar
 {% for post in site.posts limit:5 %}
-- [{{ post.title }}]({{ post.url }}) — {{ post.date | date: "%d %B %Y" }}
+- [{{ post.title }}]({{ post.url | relative_url }}) — {{ post.date | date: "%d %B %Y" }}
 {% endfor %}
